@@ -1,21 +1,32 @@
-site_name: DBMS Notes
+site_name: DBMS NOTES
+
 nav:
-  - Home: index.md
-  - Unit 1: unit1.md
-  - Unit 2: unit2.md
-  - Unit 3: unit3.md
-  - Unit 4: unit4.md
-  - Unit 5: unit5.md
-  - Made By: about.md
+  - Dashboard: index.md
+  - Units:
+      - Unit 1: unit1.md
+      - Unit 2: unit2.md
+      - Unit 3: unit3.md
+      - Unit 4: unit4.md
+      - Unit 5: unit5.md
+  - About: about.md
+
+
+
 theme:
   name: material
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
-    - scheme: slate # dark mode
-      primary: indigo
-      accent: indigo
+      primary: orange
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate  # dark mode
+      primary: orange
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -34,6 +45,12 @@ theme:
     - navigation.expand
     - search.share
     - announcement.bar
+    - footer.social
+    - footer.copyright
+    - content.footer
+  icon:
+    repo: fontawesome/brands/github
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -41,10 +58,19 @@ extra:
       name: GitHub
   copyright: "✨ Made by Aashritha Reddy"
 
+extraa_css:
+  - css/custom.css
+
 plugins:
   - search
 
 markdown_extensions:
-  - toc:
-      permalink: true
-      toc_depth: 3
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.tilde

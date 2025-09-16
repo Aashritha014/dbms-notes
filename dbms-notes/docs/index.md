@@ -1,43 +1,66 @@
-# 📘 DBMS Notes
+---
+hide:
+  - navigation
+---
 
-Welcome to my Database Management Systems (DBMS) notes!  
-This site is organized into 5 units with detailed topics and explanations.  
+# DBMS Notes
+
+Welcome to my **Database Management Systems (DBMS) notes!**  
+This site is organized into 5 units with detailed topics and explanations. Explore each unit using the colored cards below.
 
 ---
 
 ## 📑 Units
 
-!!! note "Unit 1: Introduction to DBMS"
-    [Go to Unit 1](unit1.md) — Learn about DBMS basics, data models, and architecture.
+??? info "Unit 1: Introduction to DBMS"
+    **Overview:**   
+    Data vs Information |
+    Database and DBMS |
+    Types of Databases |
+    Applications |
+    Characteristics & Features |
+    DB: Tasks in DBMS |
+    Advantages OF DBMS |
+    Disadvantages of DBMS |
+    History of Database System |
+    File System Approcah |
+    View of Data |
+    Data Abstraction |
+    Data Independance |
+    EF Codd Rules |
+    DB: Languages |
+    DB: Design Process |
+    DBS: Architecture |
+    DB: Architecture |
+    [➡ Full Unit 1 Notes ](unit1.md)
 
-!!! tip "Unit 2: Relational Model"
-    [Go to Unit 2](unit2.md) — Understand relations, keys, constraints, and ER diagrams.
+??? info "Unit 2: Relational Model"
+    **Overview:** Understand relations, keys, constraints, and ER diagrams.  
+    [➡ Go to Unit 2](unit2.md)
 
-!!! info "Unit 3: SQL & Query Processing"
-    [Go to Unit 3](unit3.md) — Dive into SQL commands, joins, and query optimization.
+??? info "Unit 3: SQL & Query Processing"
+    **Overview:** Dive into SQL commands, joins, and query optimization.  
+    [➡ Go to Unit 3](unit3.md)
 
-!!! warning "Unit 4: Transaction Management"
-    [Go to Unit 4](unit4.md) — Learn about transactions, ACID properties, and concurrency.
+??? info "Unit 4: Transaction Management"
+    **Overview:** Learn about transactions, ACID properties, and concurrency.  
+    [➡ Go to Unit 4](unit4.md)
 
-!!! success "Unit 5: Database System Architectures"
-    [Go to Unit 5](unit5.md) — Explore DBMS architectures, distributed DBs, and storage.
+??? info "Unit 5: Database System Architectures"
+    **Overview:** Explore DBMS architectures, distributed databases, and storage.  
+    [➡ Go to Unit 5](unit5.md)
+
 
 ---
 
-## 🔗 Quick Links
-- [Unit 1](unit1.md)
-- [Unit 2](unit2.md)
-- [Unit 3](unit3.md)
-- [Unit 4](unit4.md)
-- [Unit 5](unit5.md)
-- [About](about.md)
 
----
 
-💡 **Test Update:** GitHub Actions deployment is working!
 
----
 
-## 📢 Announcement
-!!! info "Announcement"
-    This is an **open source website**. Feel free to explore and contribute!
+
+
+
+
+ Made with 🧡 by Aashritha Reddy  
+[GitHub: Aashritha014](https://github.com/Aashritha014) |
+[Blog](https://aashritha014.github.io/Blog-Page/)
