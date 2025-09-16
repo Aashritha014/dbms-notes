@@ -39,6 +39,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Aashritha014
       name: GitHub
+  copyright: "✨ Made by Aashritha Reddy"
 
 plugins:
   - search
