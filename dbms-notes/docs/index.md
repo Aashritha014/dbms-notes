@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# 📘 DBMS Notes
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to my Database Management Systems (DBMS) notes!  
+This site is organized into 5 units with detailed topics and explanations.  
 
-## Commands
+## 📑 Units
+- [Unit 1](unit1.md) — Introduction to DBMS  
+- [Unit 2](unit2.md) — Relational Model  
+- [Unit 3](unit3.md) — SQL & Query Processing  
+- [Unit 4](unit4.md) — Transaction Management  
+- [Unit 5](unit5.md) — Database System Architectures  
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+---
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+✨ Made by Aashritha Reddy
