@@ -13,3 +13,6 @@ This site is organized into 5 units with detailed topics and explanations.
 ---
 
 ✨ Made by Aashritha Reddy
+---
+
+💡 **Latest Update:** Automated deployment is working 🎉
