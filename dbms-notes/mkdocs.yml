@@ -14,7 +14,11 @@ nav:
 
 theme:
   name: material
-  palette:
+
+custom_dir: overrides
+  icon:
+    repo: fontawesome/brands/github
+palette:
     - scheme: default
       primary: orange
       accent: orange
@@ -27,10 +31,10 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-  font:
+font:
     text: Roboto
     code: Roboto Mono
-  features:
+features:
     - navigation.tabs
     - navigation.top
     - search.highlight
@@ -48,9 +52,7 @@ theme:
     - footer.social
     - footer.copyright
     - content.footer
-custom_dir: overrides
-  icon:
-    repo: fontawesome/brands/github
+
 
 extra:
   social:
