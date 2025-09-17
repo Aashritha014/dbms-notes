@@ -1,9 +1,0 @@
-/* Remove icons from info admonitions */
-.md-typeset .admonition.info .admonition-title::before {
-    display: none;
-}
-
-/* Optional: remove icons from all admonitions */
-.md-typeset .admonition .admonition-title::before {
-    display: none;
-}
