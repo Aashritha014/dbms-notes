@@ -20,4 +20,42 @@ This website is **open source**, so if you spot ways to make the notes clearer o
 ---
 
 
+## How to Contribute
 
+Contributions are welcome! If you want to help improve these DBMS notes, follow these steps:
+
+1. **Fork the Repository**  
+   Click the "Fork" button at the top right of this page to create your own copy of the repo.
+
+2. **Clone Your Fork**  
+   Download your fork to your local machine using:
+   ```bash
+   git clone https://github.com/your-username/dbms-notes.git
+   ```
+   
+3. **Create a New Branch**  
+   It's best to make changes in a new branch. For example:
+   ```bash
+   git checkout -b improve-notes
+   ```
+
+4. **Make Your Changes**  
+   Update notes, fix typos, or add new material. Please keep your changes clear and focused.
+
+5. **Commit and Push**  
+   Save your changes and push your branch to your fork:
+   ```bash
+   git add .
+   git commit -m "Describe your changes"
+   git push origin improve-notes
+   ```
+
+6. **Open a Pull Request**  
+   Go to your fork on GitHub, switch to your branch, and click "New Pull Request". Describe your changes and submit!
+
+**Tips for Contributors**
+- Write clear commit messages.
+- If you’re adding new notes, try to keep the style and format consistent.
+- For large changes or questions, consider opening an issue first.
+
+Your contributions make this resource better for everyone. Thank you! 
