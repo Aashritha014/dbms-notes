@@ -48,6 +48,7 @@ theme:
     - footer.social
     - footer.copyright
     - content.footer
+custom_dir: overrides
   icon:
     repo: fontawesome/brands/github
 
