@@ -16,7 +16,7 @@ theme:
   name: material
 
 custom_dir: overrides
-  icon:
+icon:
     repo: fontawesome/brands/github
 palette:
     - scheme: default
