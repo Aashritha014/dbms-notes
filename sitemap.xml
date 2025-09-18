@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://aashritha014.github.io/DBMS-Notes/</loc>
+         <lastmod>2025-09-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aashritha014.github.io/DBMS-Notes/about/</loc>
+         <lastmod>2025-09-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aashritha014.github.io/DBMS-Notes/unit1/</loc>
+         <lastmod>2025-09-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aashritha014.github.io/DBMS-Notes/unit2/</loc>
+         <lastmod>2025-09-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aashritha014.github.io/DBMS-Notes/unit3/</loc>
+         <lastmod>2025-09-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aashritha014.github.io/DBMS-Notes/unit4/</loc>
+         <lastmod>2025-09-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aashritha014.github.io/DBMS-Notes/unit5/</loc>
+         <lastmod>2025-09-18</lastmod>
+    </url>
 </urlset>
