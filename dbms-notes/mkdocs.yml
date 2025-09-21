@@ -6,6 +6,8 @@ site_author: S.Aashritha
 
 nav:
 
+  - About Me: about.md
+
   - DBMS:
       - Overview: dbms.md
       - Unit 1: unit1.md
@@ -36,10 +38,10 @@ nav:
       - Page Replacement Algorithms (FIFO): program10.md
       - Page Replacement Algorithms (LRU & LFU): program11.md
       - Disk Scheduling (FCFS): program12.md
-      -  Disk Scheduling (SSTF): program13.md
+      - Disk Scheduling (SSTF): program13.md
       
 
-  - About Me: about.md
+  
   
 
 theme:

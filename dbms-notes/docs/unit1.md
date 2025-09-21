@@ -441,6 +441,7 @@ Database languages are used to create, manipulate, retrieve, and manage data in 
     TRUNCATE TABLE Employees;
     ```
     
+    
 
 **2. Data Manipulation Language (DML)**
 
