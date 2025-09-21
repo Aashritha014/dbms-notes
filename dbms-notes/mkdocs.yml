@@ -6,9 +6,8 @@ site_author: S.Aashritha
 
 
 nav:
-
-  - About Me: about.md
-
+  - Home: index.md
+ 
   - DBMS:
       - Overview: dbms.md
       - Unit 1: unit1.md
