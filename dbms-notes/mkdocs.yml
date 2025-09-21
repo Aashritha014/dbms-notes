@@ -1,6 +1,7 @@
 site_name: NOTES
-site_url: https://aashritha014.github.io/DBMS-Notes/
-site_description: Comprehensive notes on Database Management Systems (DBMS) covering key concepts, theories, and practical applications.
+site_url: https://Aashritha014.github.io/dbms-notes/
+use_directory_urls: true
+
 site_author: S.Aashritha 
 
 
