@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#operating-system" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -613,6 +618,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1121,6 +1128,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1136,9 +1145,920 @@
 
 
 
-  <h1>Unit 1</h1>
-
-
+<h1 id="operating-system"><strong>Operating System</strong><a class="headerlink" href="#operating-system" title="Permanent link">&para;</a></h1>
+<ul>
+<li>An Operating System(OS) is a software that manages and handles hardware and software resources of a computing device.</li>
+<li>It provides a user interface and enables communication between computer hardware and software</li>
+<li>
+<p>Responsible for managing and controlling all the activities and sharing of computer resources among different running applications.</p>
+<p><img alt="image.png" src="attachment:feb01200-c6dd-4b8a-8185-56ab9fef8c51:image.png" /></p>
+</li>
+<li>
+<p>Example: Linux, Unix, Windows 11, Android, macOS</p>
+</li>
+<li><strong>Kernal:</strong><ul>
+<li>The software that contains the core components of the OS is called the <strong>kernel</strong></li>
+<li>It is responsible for all major operations and interaction with the hardware.</li>
+<li>A low-level Software that includes all the basic functions like processor management, memory management, file management, etc.</li>
+</ul>
+</li>
+<li><strong>Shell:</strong><ul>
+<li>Shell is an interface of an OS. It can be command line interface or a graphical user interface.</li>
+<li>User interacts with an OS using shell. Application programs can also use shell interface to interact with underlying OS.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="os-generations"><strong>OS: Generations</strong><a class="headerlink" href="#os-generations" title="Permanent link">&para;</a></h1>
+<ul>
+<li>0th Generation<ul>
+<li>1940 - early 1950s</li>
+<li>vacuum tubes and plug boards</li>
+</ul>
+</li>
+<li>1st Generation<ul>
+<li>1951-1956</li>
+<li>transistors and batch systems</li>
+</ul>
+</li>
+<li>2nd Generation<ul>
+<li>1956-196</li>
+<li>Integrated Circuits and multi programming</li>
+</ul>
+</li>
+<li>3rd Generation<ul>
+<li>1964-1979</li>
+<li>personal computers</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="computer-system-operation"><strong>Computer System Operation</strong><a class="headerlink" href="#computer-system-operation" title="Permanent link">&para;</a></h1>
+<ul>
+<li>A modern say general purpose computer consists of one or more CPU and a number of device controllers connected through a common bus that provides access to shared memory</li>
+<li>Each device controller is in charge of a specific type of device</li>
+<li>The CPU and the dc can execute concurrently, competing for memory cycles</li>
+<li>
+<p>To ensure orderly access to the shared memory, a memory controller is provided who’s function is to synchronise access to the memory</p>
+</li>
+<li>
+<p><strong>CPU:</strong></p>
+<ul>
+<li>Executes instructions and processes data.</li>
+<li>Components:<ul>
+<li><strong>Control Unit (CU):</strong> Directs data flow.</li>
+<li><strong>Arithmetic Logic Unit (ALU):</strong> Performs arithmetic and logical operations.</li>
+<li><strong>Registers:</strong> Store temporary data for quick access.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Memory (Primary Storage):</strong><ul>
+<li><strong>RAM (Random Access Memory)</strong>: Volatile, fast storage for active programs/data.</li>
+<li><strong>ROM (Read-Only Memory)</strong>: Non-volatile, stores firmware (e.g., BIOS).</li>
+</ul>
+</li>
+<li><strong>I/O Devices:</strong><ul>
+<li>Keyboards, mice, monitors, printers, etc.</li>
+<li>Managed via <strong>device drivers</strong> (software that interfaces with hardware).</li>
+</ul>
+</li>
+<li><strong>Storage Devices (Secondary Storage):</strong><ul>
+<li>HDDs, SSDs, USB drives (non-volatile, slower than RAM).</li>
+</ul>
+</li>
+<li><strong>Buses:</strong><ul>
+<li>Communication channels between components (e.g., data bus, address bus).</li>
+</ul>
+</li>
+<li><strong>Bootstrap Program:</strong><ul>
+<li>bootstrap program is loaded at power-up or
+reboot</li>
+<li>Typically stored in ROM or EPROM, generally
+known as firmware</li>
+<li>Initialises all aspects of system</li>
+<li>Loads operating system kernel and and starts execution</li>
+</ul>
+</li>
+<li><strong>Interrupt:</strong><ul>
+<li>The occurence of an event is usually signalled by an interrupt from hardware or software</li>
+<li>hardware may trigger an interrupt at any time by sending a signal to the CPU using the system bus</li>
+</ul>
+</li>
+<li><strong>System Call:</strong><ul>
+<li>Software may trigger an interrupt by executing a special operation called as a system call(monitor call)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="io-structure"><strong>I/O Structure</strong><a class="headerlink" href="#io-structure" title="Permanent link">&para;</a></h1>
+<p>A large portion of an operating system’s code is dedicated to managing I/O due to its importance in ensuring system reliability and performance. Additionally, the diverse nature of devices requires efficient handling mechanisms.</p>
+<h2 id="basic-io-mechanism"><strong>Basic I/O Mechanism</strong><a class="headerlink" href="#basic-io-mechanism" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>System Components</strong>:<ul>
+<li>A general-purpose computer system consists of a <strong>CPU</strong> and multiple <strong>device controllers</strong>, which are connected through a <strong>common bus</strong>.</li>
+<li>Each <strong>device controller</strong> has:<ul>
+<li><strong>Local buffer storage</strong> for temporary data holding.</li>
+<li><strong>General-purpose registers</strong> for control and status information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Role of Device Controllers</strong>:<ul>
+<li>The <strong>device controller</strong> manages data transfer between the <strong>peripheral device</strong> and its <strong>local buffer storage</strong>.</li>
+<li>The <strong>OS communicates</strong> with the device controller using a <strong>device driver</strong>, which acts as an interface between the OS and hardware.</li>
+<li>Each <strong>device controller has a corresponding device driver</strong>, which understands its specific operations and provides a uniform interface to the OS.</li>
+</ul>
+</li>
+</ol>
+<h2 id="io-operation-flow"><strong>I/O Operation Flow</strong><a class="headerlink" href="#io-operation-flow" title="Permanent link">&para;</a></h2>
+<ol>
+<li>The <strong>OS initiates an I/O operation</strong> by instructing the <strong>device driver</strong> to load the necessary registers within the <strong>device controller</strong>.</li>
+<li>The <strong>device controller</strong> examines the register contents to determine the required action.</li>
+<li>The controller <strong>transfers data</strong> from the peripheral device to the <strong>local buffer</strong>.</li>
+<li>Upon completion, the <strong>device controller sends an interrupt</strong> to notify the OS that the operation is finished.</li>
+<li>
+<p>The <strong>device driver handles the interrupt</strong>, completes the necessary processing, and <strong>returns control to the OS</strong>.</p>
+</li>
+<li>
+<p><strong>Interrupt-Driven I/O</strong>:</p>
+<ul>
+<li>Suitable for transferring <strong>small amounts of data</strong>.</li>
+<li>However, it generates a <strong>high overhead</strong> for bulk data transfers (e.g., disk I/O) because an <strong>interrupt is triggered for each byte of data</strong>.</li>
+</ul>
+</li>
+<li><strong>Direct Memory Access (DMA)</strong>:<ul>
+<li>Used for transferring <strong>large blocks of data</strong> efficiently.</li>
+<li>The <strong>device controller</strong> is responsible for moving an entire block of data <strong>directly between the device and memory</strong> without CPU intervention.</li>
+<li>The CPU only receives <strong>one interrupt per block</strong> (instead of one per byte), reducing overhead.</li>
+<li>While DMA is in progress, the <strong>CPU remains free</strong> to perform other tasks, improving overall system efficiency.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h1 id="storage-structure"><strong>Storage Structure</strong><a class="headerlink" href="#storage-structure" title="Permanent link">&para;</a></h1>
+<p>A storage system provides:</p>
+<ol>
+<li><strong>Storing data</strong> for later retrieval.</li>
+<li><strong>Holding data</strong> until accessed.</li>
+</ol>
+<p>The key differences between various storage types are:</p>
+<ul>
+<li>Speed (faster storage is generally more expensive).</li>
+<li>Cost per bit ****(decreases as we move down the hierarchy).</li>
+<li>Size (higher levels store less data, lower levels store more).</li>
+<li>Volatility (some storage types lose data when power is lost).</li>
+<li><strong>Registers:</strong><ul>
+<li>located inside the CPU, these store data in bits and can be accessed quickly</li>
+<li>It can hold small amount of data (32 to 64 bits)</li>
+<li>It is volatile in nature</li>
+<li>ex: instruction Register (IR), Accumulator, Stack Pointer.</li>
+</ul>
+</li>
+<li><strong>Cache:</strong><ul>
+<li>Located in between CPU and RAM. It is faster that RAM but slower than registers</li>
+<li>It stores frequently accessed data and instructions to speed up processing and reduces access to the slower main memory</li>
+<li>It is volatile in nature</li>
+</ul>
+</li>
+<li><strong>Main Memory[RAM]:</strong><ul>
+<li>It is directly accessible by CPU</li>
+<li>It is slower than cache but faster than secondary storage</li>
+<li>It is volatile in nature and holds active processes, programs, and data currently in use.</li>
+<li><strong>Dynamic RAM (DRAM):</strong> Used in main memory, slower than SRAM.</li>
+<li><strong>Static RAM (SRAM):</strong> Faster but used mainly for cache memory.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Secondary Storage:</strong></p>
+<p>Used for data backup, archival storage, and infrequently accessed data.Non volatile in nature </p>
+<ul>
+<li><strong>Solid-State Drive (SSD):</strong><ul>
+<li>The SSD have several variants but in general are faster than Magnetic disk and are non-volatile</li>
+<li>Uses flash memory, faster but expensive.</li>
+</ul>
+</li>
+<li><strong>Magnetic Disk</strong><ul>
+<li><strong>Hard Disk Drive (HDD):</strong> Uses spinning magnetic disks, slower but cheaper</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tertiary Storage:</strong> </p>
+<p>Used for long-term storage, offline storage, and backups.</p>
+<p>External devices, cloud, or offline storage.</p>
+<ul>
+<li><strong>Optical Disk</strong><ul>
+<li>Used for media storage and backups.</li>
+</ul>
+</li>
+<li><strong>Magnetic Tapes</strong><ul>
+<li>Used for long-term data storage.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="os-structures"><strong>OS: Structures</strong><a class="headerlink" href="#os-structures" title="Permanent link">&para;</a></h1>
+<ul>
+<li>An operating system is a structure that allows the user application programs to interact with the system hardware</li>
+<li>Since the operating system is such a complex structure, it should be created with utmost care so it can be used and modified easily.</li>
+<li>An easy way to do this is to create the operating system in parts.</li>
+<li>Each of these parts should be well defined with clear inputs, outputs and functions.</li>
+</ul>
+<h2 id="simple-structure">Simple Structure<a class="headerlink" href="#simple-structure" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Lacks a well-defined structure and is typically implemented as a monolithic system.</li>
+<li>Functions are not separated into distinct modules, leading to direct interaction between components.</li>
+<li>example: MS-DOS</li>
+<li>Provides basic functionalities with minimal separation.</li>
+<li>Kernel and application programs interact without clear boundaries, making the system efficient but hard to maintain.</li>
+<li><strong>Advantages:</strong> Fast execution due to fewer layers.</li>
+<li><strong>Disadvantages:</strong> Difficult to extend and debug due to tight coupling.</li>
+</ul>
+<h2 id="layered-structure">Layered Structure<a class="headerlink" href="#layered-structure" title="Permanent link">&para;</a></h2>
+<ul>
+<li>An OS can be broken into pieces and retain much more control over the system.</li>
+<li>In this structure, the OS is broken into a number of layers (levels).</li>
+<li>The bottom layer (layer 0) is the hardware, and the topmost layer (layer N) is the user interface.</li>
+<li>These layers are so designed that each layer uses the functions of the lower-level layers</li>
+<li>One problem with the layered structure is that each layer needs to be carefully defined. This is necessary because the upper layers can only use the functionalities of the layers below them.</li>
+<li><strong>Advantages</strong><ul>
+<li><strong>High Customizable</strong> - Being layered, each layer implmentation can be customized easily. A new functionality can be added without impacting other modules as well</li>
+<li><strong>Verifiable</strong> - Being modular, each layer can be verified and debugged easily.</li>
+</ul>
+</li>
+<li><strong>Disadvantages</strong><ul>
+<li><strong>Less Performant</strong> - A layered structured operating system is less performant as compared to basic structured operating system.</li>
+<li><strong>Complex designing</strong> - Each layer is to planned carefully as each layer communicates with lower layer only and a good design process is required to create a layered operating system.</li>
+</ul>
+</li>
+</ul>
+<h2 id="micro-kernal-structure">Micro Kernal Structure<a class="headerlink" href="#micro-kernal-structure" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In micro-kernel, we have multiple kernels each one specilized in particular service</li>
+<li>Each microkernel is developed independent to the other one and makes system more stable</li>
+<li>If one kernel fails the operating sytem will keep working with other kernel's functionalities.</li>
+<li><strong>Advantages</strong><ul>
+<li><strong>Reliable and Stable</strong> - As multiple kernels are working simultaneously, chances of failure of operating sytem is very less. If one functionlity is down, operating system can still provide other functionalities using stable kernels</li>
+<li><strong>Maintainability</strong> - Being small sized kernels, code size is maintainable. One can enhance a microkernel code base without impacting other microkernel code base.</li>
+</ul>
+</li>
+<li><strong>Disadvantages</strong><ul>
+<li><strong>Complex to Design</strong> - Such a microkernel based architecture is difficult to design.</li>
+<li><strong>Performance Degradation</strong> - Multi kernel, Multi-modular communication may hamper the performance as compared to monolith architecture.</li>
+</ul>
+</li>
+</ul>
+<h2 id="modular-structure">Modular Structure<a class="headerlink" href="#modular-structure" title="Permanent link">&para;</a></h2>
+<ul>
+<li>It is considered as the best approach for an OS. It involves designing of a modular kernel.</li>
+<li>The kernel has only a set of core components and other services are added as dynamically loadable modules to the kernel either during runtime or boot time.</li>
+<li>It resembles layered structure due to the fact that each kernel has defined and protected interfaces, but it is more flexible than a layered structure as a module can call any other module.</li>
+<li><strong>Advantages:</strong><ul>
+<li><strong>High Customizable</strong> - Being modular, each module implmentation can be customized easily. A new functionality can be added without impacting other modules as well.</li>
+<li><strong>Verifiable</strong> - Being modular, each layer can be verified and debugged easily.</li>
+</ul>
+</li>
+<li><strong>Disadvantages:</strong><ul>
+<li><strong>Less Performant</strong> - A modular structured operating system is less performant as compared to basic structured operating system.</li>
+<li><strong>Complex designing</strong> - Each module is to planned carefully as each module communicates with kernal. A communication API is to be devised to facilitate the communication.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="os-types"><strong>OS: Types</strong><a class="headerlink" href="#os-types" title="Permanent link">&para;</a></h1>
+<h2 id="batch-os">Batch OS<a class="headerlink" href="#batch-os" title="Permanent link">&para;</a></h2>
+<ul>
+<li>This type of operating system does not interact with the computer directly.</li>
+<li>There is an operator which takes similar jobs having the same requirements and groups them into batches.</li>
+<li>It is the responsibility of the operator to sort jobs with similar needs.</li>
+<li>Batch OS is designed to manage and execute a large number of jobs  sequentially without user intervention and efficiently by processing them in groups</li>
+<li>IBM introduced FORTRAN IBSYS 7096 for this</li>
+<li><strong>Example:</strong> Payroll Systems, Bank Statements, etc.</li>
+<li>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>Multiple users can share the batch systems.</li>
+<li>It is easy to manage large work repeatedly in batch systems.</li>
+</ul>
+</li>
+<li>
+<p><strong>Disadvantages</strong></p>
+<ul>
+<li>CPU is not used efficiently. When the current process is doing IO, CPU is free and could be utilised by other processes waiting.</li>
+<li>The other jobs will have to wait for an unknown time if any job fails.</li>
+<li>In batch os, average response time increases as all processes are processed one by one.</li>
+</ul>
+</li>
+</ul>
+<h2 id="multi-programming-os">Multi-Programming OS<a class="headerlink" href="#multi-programming-os" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Multiprogramming OS allows multiple programs to be <strong>loaded into memory and executed concurrently</strong>, maximizing <strong>CPU utilization</strong>.</li>
+<li>It was developed to overcome the limitations of Batch OS, where the CPU often remained idle while waiting for I/O operations.</li>
+<li>The OS manages their execution based on <strong>priority and availability of resources</strong>.</li>
+<li>The OS divides memory among different programs using <strong>partitioning techniques</strong> (Fixed or Dynamic Partitioning).</li>
+<li>If one process is waiting for I/O (e.g., reading from a disk), the CPU switches to another process.This process of switching between programs is called <strong>context switching</strong>.This reduces CPU idle time and increases throughput.</li>
+<li><strong>Advantages</strong><ul>
+<li>Maximises CPU Utilisation</li>
+<li>Increases Throughput</li>
+<li>Efficient Resource Management</li>
+</ul>
+</li>
+<li><strong>Disadvantages</strong><ul>
+<li>Requires efficient allocation of memory to multiple programs.</li>
+<li>Higher Response Time since some processes may have to wait longer for CPU time.</li>
+<li>Risk of Deadlock as multiple processes may wait for resources indefinitely.</li>
+</ul>
+</li>
+</ul>
+<h2 id="multi-taksing-os">Multi-Taksing OS<a class="headerlink" href="#multi-taksing-os" title="Permanent link">&para;</a></h2>
+<ul>
+<li>It is a type of Multiprogramming system with every process running in round robin manner where not only are multiple programs loaded into memory, but they are also executed <strong>concurrently with time-sharing</strong>.</li>
+<li>The OS <strong>allocates a fixed time slice</strong> to each process</li>
+<li>
+<p>The time that each task gets to execute is called quantum. After this time interval is over OS forcibly switches over to the next process.</p>
+</li>
+<li>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>Ensures that no process keeps the CPU idle for long.</li>
+<li>Improves user experience by switching between tasks quickly.</li>
+<li>Users can run multiple applications simultaneously.</li>
+</ul>
+</li>
+<li><strong>Disadvantages</strong><ul>
+<li>Risk of overloading as too many processes can slow down performance.</li>
+<li>Running multiple applications consumes more memory.</li>
+<li>Requires advanced scheduling and memory management.</li>
+</ul>
+</li>
+</ul>
+<h2 id="multi-processing-os">Multi-Processing OS<a class="headerlink" href="#multi-processing-os" title="Permanent link">&para;</a></h2>
+<ul>
+<li>a type of Operating System in which more than one CPU is used for the execution of resources.</li>
+<li>It betters the throughput of the System.</li>
+<li><strong>Advantages</strong><ul>
+<li>It increases the throughput of the system as processes can be parallelized.</li>
+<li>As it has several processors, so, if one processor fails, we can proceed with another processor.</li>
+</ul>
+</li>
+</ul>
+<h2 id="time-sharing-os">Time Sharing OS<a class="headerlink" href="#time-sharing-os" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The time interval required to process and respond to inputs is very small. This time interval is called <strong>response time.</strong></li>
+<li><strong>Real-time systems</strong> are used when there are time requirements that are very strict like missile systems,ATC, robots, etc.</li>
+<li><strong>Hard Real-Time OS</strong> are meant for applications where time constraints are very strict and even the shortest possible delay is not acceptable</li>
+<li><strong>Soft Real-Time OS</strong> are for applications where time-constraint is less strict</li>
+</ul>
+<h2 id="distributed-os">Distributed OS<a class="headerlink" href="#distributed-os" title="Permanent link">&para;</a></h2>
+<ul>
+<li>These types of operating system is a recent advancement in the world of computer technology and are being widely accepted all over the world and, that too, at a great pace.</li>
+<li>Various autonomous interconnected computers communicate with each other using a shared communication network.</li>
+<li>Independent systems possess their own memory unit and CPU. These are referred to as loosely coupled systems or distributed systems These systems’ processors differ in size and function.</li>
+<li>The major benefit of working with these types of the operating system is that it is always possible that one user can access the files or software which are not actually present on his system but some other system connected within this network i.e., remote access is enabled within the devices connected in that network.</li>
+<li><strong>Advantages</strong><ul>
+<li>Failure of one will not affect the other network communication, as all systems are independent of each other.</li>
+<li>Electronic mail increases the data exchange speed.</li>
+<li>Since resources are being shared, computation is highly fast and durable.</li>
+<li>Load on host computer reduces.</li>
+<li>These systems are easily scalable as many systems can be easily added to the network.</li>
+<li>Delay in data processing reduces.</li>
+</ul>
+</li>
+<li><strong>Disadvantages</strong><ul>
+<li>Failure of the main network will stop the entire communication.</li>
+<li>To establish distributed systems the language is used not well-defined yet.</li>
+<li>These types of systems are not readily available as they are very expensive. Not only that the underlying software is highly complex and not understood well yet.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="os-servies"><strong>OS: Servies</strong><a class="headerlink" href="#os-servies" title="Permanent link">&para;</a></h1>
+<p>An operating system provides a variety of essential services that help users and system programs interact with hardware efficiently. These services ensure system usability, resource management, and process control</p>
+<ol>
+<li><strong>Program Execution:</strong><ul>
+<li>The OS ensures smooth execution of user programs and system processes.</li>
+<li>Loads programs into memory for execution.</li>
+<li>Allocates CPU time for execution.</li>
+<li>Handles process creation, termination, and scheduling.</li>
+<li>Provides a mechanism for process communication.</li>
+<li>Provides a mechanism for deadlock handling.</li>
+</ul>
+</li>
+<li><strong>Resource Allocation:</strong><ul>
+<li>The OS allocates system resources efficiently among processes.</li>
+<li><strong>CPU Scheduling:</strong> Determines which process gets CPU time.</li>
+<li><strong>Memory Allocation:</strong> Assigns RAM space dynamically.</li>
+<li><strong>Disk Management:</strong> Allocates storage space for files.</li>
+<li><strong>Device Management:</strong> Handles I/O device sharing.</li>
+</ul>
+</li>
+<li><strong>Communication:</strong><ul>
+<li>Processes need to communicate for data sharing and coordination. The OS provides mechanisms for Inter-Process Communication (IPC).</li>
+<li><strong>Shared Memory:</strong> Processes share a common memory space for exchanging data.</li>
+<li><strong>Message Passing:</strong> Processes send and receive messages through system calls.</li>
+</ul>
+</li>
+<li><strong>File System Manipulation:</strong><ul>
+<li>Handles the creation, deletion, and organization of files and directories.</li>
+<li><strong>File Organization:</strong> Stores and organizes data in a structured manner.</li>
+<li><strong>Access Control:</strong> Manages user permissions (Read, Write, Execute).</li>
+<li><strong>File Operations:</strong> Provides commands for opening, reading, writing, closing files.</li>
+<li><strong>File Sharing &amp; Security:</strong> Ensures controlled access and protection of data</li>
+</ul>
+</li>
+<li><strong>I/O Operation:</strong><ul>
+<li>Coordinates input and output operations to communicate with hardware devices like keyboards, printers, and disk drives.</li>
+<li><strong>Device Drivers:</strong> Interfaces between OS and hardware devices.</li>
+<li><strong>Buffering &amp; Caching:</strong> Temporarily stores data for smooth processing.</li>
+<li><strong>Interrupt Handling:</strong> Manages signals from devices to the CPU.</li>
+</ul>
+</li>
+<li><strong>Protection and Security:</strong><ul>
+<li>Safeguards the system against unauthorized access and threats</li>
+<li><strong>Authentication:</strong> Ensures only authorized users access the system.</li>
+<li><strong>Encryption:</strong> Protects data from unauthorized modifications.</li>
+<li><strong>Access Control:</strong> Implements user permissions and policies.</li>
+<li><strong>Threat Detection:</strong> Identifies and prevents viruses and malware.</li>
+</ul>
+</li>
+<li><strong>Error Detection:</strong><ul>
+<li>The OS constantly monitors the system for hardware and software errors to ensure reliable operation.</li>
+<li>Logs errors for debugging.</li>
+<li>Displays error messages to users.</li>
+<li>Attempts error recovery (e.g., retries disk read/write operations).</li>
+<li>Prevents faulty programs from affecting system stability.</li>
+</ul>
+</li>
+<li><strong>Accounting &amp; Tracking:</strong><ul>
+<li>Monitors CPU, memory, and I/O usage.</li>
+<li>Tracks user logins and activity.</li>
+<li>Helps administrators optimize resource allocation.</li>
+<li>Used in cloud computing for usage-based billing</li>
+</ul>
+</li>
+<li><strong>User Interface:</strong><ul>
+<li>Provides an interface for users to interact with the system.</li>
+<li><strong>Command-Line Interface (CLI):</strong> Uses text-based commands (e.g., Linux Terminal).</li>
+<li><strong>Graphical User Interface (GUI):</strong> Uses visual elements (e.g., Windows, macOS).</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h1 id="dual-mode-operation"><strong>Dual Mode Operation</strong><a class="headerlink" href="#dual-mode-operation" title="Permanent link">&para;</a></h1>
+<p><strong>The dual mode operation ensures:</strong></p>
+<ol>
+<li><strong>Protection of the OS</strong> from faulty or malicious user programs.</li>
+<li><strong>Protection of user programs</strong> from interfering with each other.</li>
+</ol>
+<p>This is achieved by restricting <strong>certain critical operations</strong> to a <strong>privileged mode</strong>.</p>
+<h2 id="modes-of-operation">Modes of Operation:<a class="headerlink" href="#modes-of-operation" title="Permanent link">&para;</a></h2>
+<p>A computer system operates in <strong>two modes</strong>:</p>
+<ul>
+<li><strong>User Mode</strong>: Executes user applications with <strong>restricted access</strong> to system resources.</li>
+<li><strong>Kernel Mode (Supervisor Mode / System Mode / Privileged Mode)</strong>: Executes <strong>OS instructions</strong> with <strong>full access</strong>to hardware and system resources.</li>
+</ul>
+<p>A special hardware <strong>mode bit</strong> is used to indicate the current mode:</p>
+<ul>
+<li><strong>0 → Kernel Mode</strong></li>
+<li><strong>1 → User Mode</strong></li>
+</ul>
+<p>If an attempt is made to execute a privileged instruction in user mode, the hardware does not execute the instruction but rather treats it as illegal and traps it to the OS</p>
+<p><strong>Dual mode of an OS provides:</strong></p>
+<ul>
+<li>Security → Prevents unauthorized access to system resources.</li>
+<li>Stability → Protects the OS and user programs from errors and crashes</li>
+<li>Controlled Access → Ensures users can access system services safely.</li>
+</ul>
+<h2 id="working-of-dual-mode-operation">Working of Dual Mode Operation:<a class="headerlink" href="#working-of-dual-mode-operation" title="Permanent link">&para;</a></h2>
+<p><img alt="image.png" src="attachment:6424f296-d606-44ec-a1e7-4fb32d162fed:image.png" /></p>
+<ul>
+<li>There are two modes of operation <strong>user mode</strong> and <strong>kernel mode</strong> (supervisor mode, system mode, privileged mode)</li>
+<li>A bit mode called the <strong>mode bit</strong>, is added to the hardware of the computer to indicate the current mode: <strong>kernel mode(0) and user mode(1)</strong></li>
+<li>When the computer system is executing on behalf of a user application it is in user mode.</li>
+<li>However, when an application requests a service from OS via a system call, the system transitions from user to kernel mode to full fill the request</li>
+<li>At system boot time, the hardware starts in kernel mode. The OS is then loaded and starts user applications in user mode.</li>
+<li>Whenever trap or interrupt occurs, the hardware switches from user mode to kernel (that is, changes the state of the mode bit to O).</li>
+<li>Thus, whenever the OS gains control of the computer, it is in kernel mode.</li>
+<li>The system always switches to user mode (by setting the mode bit to 1) before passing control user program.</li>
+</ul>
+<hr />
+<h1 id="computer-system-architerture"><strong>Computer System Architerture</strong><a class="headerlink" href="#computer-system-architerture" title="Permanent link">&para;</a></h1>
+<p>Based on number of general purpose processes we have:</p>
+<h2 id="single-system-processing">Single System Processing<a class="headerlink" href="#single-system-processing" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A single processor system contains only one processor.</li>
+<li>So only one process can be executed at a time and then the process is selected from the ready queue</li>
+<li>On a single processor system, there is one main CPU capable of executing a general purpose instruction , including instructions from user processes</li>
+<li>Almost all single processor systems have other special purpose processors as well</li>
+<li>All of these special purpose processors run a limited instruction set and do not run user processes</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Simple System Architecture</li>
+<li>Easier to develop and maintain</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Slower execution due to sequential processing</li>
+<li>High CPU load can cause performance bottlenecks</li>
+<li>Cannot execute multiple tasks simultaneously</li>
+</ul>
+<h2 id="multiple-system-processing">Multiple System Processing<a class="headerlink" href="#multiple-system-processing" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A multiprocessing operating system is defined as a type of operating system that makes use of more than one CPU to improve performance</li>
+<li>Multiple processors work parallelly in multi-processing os to execute tasks concurrently.</li>
+<li>These processors are in close communication, sharing the computer bus and sometimes the clock, memory and peripheral devices</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ol>
+<li>Increased throughput: Multiple processing systems improve throughput by executing multiple tasks simultaneously, reducing idle time, and optimizing resource utilization by <ul>
+<li><em>Parallel Execution:</em> tasks are divided among multiple CPUs and multiple processors execute different processes at the same time, reducing overall execution time and increasing efficiency</li>
+<li><em>Load Balancing</em>:the system distributes tasks evenly among processors to prevent bottlenecks and dynamic load balancing ensures that no processor remains idle while others are overloaded.</li>
+<li><em>Efficient Process Scheduling:</em> multiprocessing allows for better scheduling by making use of algorithms such as RR,SJF and priority scheduling</li>
+<li><em>Reduced Context Switching</em>: MP reduce the need for switching, leading to higher throughput</li>
+<li><em>Reduced Waiting time for IO operations:</em> while one processor handles computation, another can manage I/O operations, preventing idle time.</li>
+<li><em>Fault Tolerance and Redundancy:</em> If one processor fails, others continue processing, preventing system downtime and maintaining throughput.</li>
+</ul>
+</li>
+<li>Economy of scale - Multiprocessor systems can cost less than equivalent multiple single processor systems because they can share peripherals, mass storage and power supplies.</li>
+</ol>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Higher hardware and maintenance costs.</li>
+<li>Complexity in system design and synchronization.</li>
+<li>Requires special software to manage multiple processors</li>
+</ul>
+<h3 id="symmetric-multiple-processing">Symmetric Multiple Processing<a class="headerlink" href="#symmetric-multiple-processing" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Multiple processors share the same physical memory and operate under a single OS, with each processor having equal access to system resources.</li>
+<li>Each processor has its own set of registers as well as local or private cache</li>
+<li>All CPUs access the same memory, leading to efficient communication</li>
+<li>Tasks are distributed evenly among processors to improve performance.</li>
+<li><strong>Advantages:</strong><ul>
+<li><strong>Better Resource Utilization:</strong> Each processor is able to work on a particular task and share the work load hence enhancing the performance.</li>
+<li><strong>Scalability:</strong> Additional processors can also be added to SMP systems hence they have a good potential for scaling.</li>
+<li><strong>Fault Tolerance:</strong> Due to the notion of distributed processing, where no single processor has control of the entire system, failure of one processor does not result in failure of the entire system</li>
+</ul>
+</li>
+<li><strong>Disadvantages:</strong><ul>
+<li><strong>Complex Scheduling:</strong> Tasks distribution among the multiple processors might be more challenging than the simple division of data among the cores and can involve logical functions of scheduling.</li>
+<li><strong>Resource Contention:</strong> Several processors might run for the same memory or I/O thus they might experience contention.</li>
+<li><strong>Increased Hardware Costs:</strong> SMP systems call for more elaborate hardware meant for the shared access between the processors and the memory and other system assets.</li>
+</ul>
+</li>
+</ul>
+<h3 id="asymmetric-multiple-processing">Asymmetric Multiple Processing<a class="headerlink" href="#asymmetric-multiple-processing" title="Permanent link">&para;</a></h3>
+<ul>
+<li>One processor acts as a <em>master</em> whereas remaining all processors act a <em>slaves</em>.</li>
+<li>Slave processors are assigned with ready to execute processes by the master processor.</li>
+<li>A ready queue is being maintained by master processor to provides with processes for slaves.</li>
+<li>In multiprocessing operating system a schedular is created by master process that assigns processes to be executed to slave processors.</li>
+<li><strong>Advantages:</strong><ul>
+<li><strong>Simplified Control:</strong> Another advantage is that there is a single master processor who handles the task of scheduling so as to ensure co-ordination of tasks.</li>
+<li><strong>Reduced Resource Conflicts:</strong> This is made possible since only the master processor communicates with the operating system hence the conflicts between the processors are low.</li>
+</ul>
+</li>
+<li><strong>Disadvantages:</strong><ul>
+<li><strong>Single Point of Failure:</strong> Correspondingly, the operations of the system are largely contingent upon the master processor. When computer is splitter into master and other processors, if the master does not work, then the entire system can be non-operational.</li>
+<li><strong>Less Efficient Resource Utilization:</strong> Other subordinate processors may even remain idle due to the inability of master processor to assign tasks appropriately.</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Feature</strong></th>
+<th><strong>SMP</strong></th>
+<th><strong>AMP</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Definition</em></td>
+<td>Multiple processors share the OS and have equal control over system tasks.</td>
+<td>One master processor controls the system and assigns tasks to slave processors.</td>
+</tr>
+<tr>
+<td><em>Processor Equality</em></td>
+<td>All processors are equal.</td>
+<td>Processors are not equal.</td>
+</tr>
+<tr>
+<td><em>OS Task Management</em></td>
+<td>Tasks are distributed among individual processors.</td>
+<td>The master processor handles OS tasks.</td>
+</tr>
+<tr>
+<td><em>Processor Control</em></td>
+<td>All processors perform tasks independently.</td>
+<td>The master processor assigns tasks to slave processors.</td>
+</tr>
+<tr>
+<td><em>Workload Distribution</em></td>
+<td>Dynamic; any processor can execute any task.</td>
+<td>Fixed; tasks are pre-assigned to specific processors.</td>
+</tr>
+<tr>
+<td><em>Communication</em></td>
+<td>All processors communicate via shared memory.</td>
+<td>No direct communication; master processor controls everything.</td>
+</tr>
+<tr>
+<td><em>Fault Tolerance</em></td>
+<td>High; if one processor fails, others can take over.</td>
+<td>Low; failure of the master processor can halt the system.</td>
+</tr>
+<tr>
+<td><em>Efficiency</em></td>
+<td>High, as all processors share the workload equally.</td>
+<td>Lower efficiency due to dependency on the master processor.</td>
+</tr>
+<tr>
+<td><em>Complexity</em></td>
+<td>More complex due to synchronization and resource sharing.</td>
+<td>Simpler to implement since the master processor handles system tasks.</td>
+</tr>
+<tr>
+<td><em>Resource Sharing</em></td>
+<td>Shared memory and OS control among all processors.</td>
+<td>Limited sharing; master processor manages system resources.</td>
+</tr>
+<tr>
+<td><em>Scalability</em></td>
+<td>Highly scalable; additional processors can be added easily.</td>
+<td>Less scalable due to dependency on the master processor.</td>
+</tr>
+<tr>
+<td><em>Cost</em></td>
+<td>Expensive.</td>
+<td>Relatively inexpensive.</td>
+</tr>
+<tr>
+<td><em>Examples</em></td>
+<td>Multi-core CPUs, modern servers, supercomputers.</td>
+<td>Embedded systems, early multiprocessor systems, mobile devices.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="clustered-systems">Clustered Systems<a class="headerlink" href="#clustered-systems" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Clustered systems are similar to parallel systems as they both have multiple CPUs.</li>
+<li>However a major difference is that clustered systems are created by two or more independent systems, with shared common storage and connected by a high-speed LAN, working together.</li>
+<li>Each node in the clustered systems contains the cluster software.</li>
+<li>This software monitors the cluster system and makes sure it is working as required.</li>
+<li>
+<p>If any one of the nodes in the clustered system fail, then the rest of the nodes take control of its storage and resources and try to restart.</p>
+</li>
+<li>
+<p><strong>Advantages of Clustering Systems:</strong></p>
+</li>
+<li><strong>Fault Tolerance:</strong><ul>
+<li>The loss of one node does not result in the loss of the system.</li>
+<li>They may even contain one or more nodes in hot standby mode which allows them to take the place of failed nodes.</li>
+</ul>
+</li>
+<li><strong>Performance:</strong><ul>
+<li>They work as a parallel unit and result in much better performance for the system.</li>
+</ul>
+</li>
+<li><strong>Scalability:</strong><ul>
+<li>It is easy to add a new node to the system.</li>
+</ul>
+</li>
+</ul>
+<h3 id="asymmetric-clustered-systems">Asymmetric Clustered Systems<a class="headerlink" href="#asymmetric-clustered-systems" title="Permanent link">&para;</a></h3>
+<ul>
+<li>one of the nodes in the clustered system is in <em>hot standby mode</em> and all the others run the required applications.</li>
+<li>The hot standby mode is a failsafe in which a hot standby node is part of the system</li>
+<li>The hot standby node continuously monitors the server and if it fails, the hot standby node takes its place.</li>
+</ul>
+<h3 id="symmetric-clustered-systems">Symmetric Clustered Systems<a class="headerlink" href="#symmetric-clustered-systems" title="Permanent link">&para;</a></h3>
+<ul>
+<li>In symmetric clustering system two or more nodes all run applications as well as monitor each other.</li>
+<li>This is more efficient than asymmetric system as it uses all the hardware and doesn't keep a node merely as a hot standby</li>
+<li>Such systems can supply significantly greater computational power than single processor or even SMP systems because they can run an application concurrently on all computers in the cluster, this involves a technique known as <em>parallelization</em> which divides a program into separate components that run in parallel on individual computers in the cluster</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Feature</strong></th>
+<th><strong>SPS</strong></th>
+<th><strong>MPS</strong></th>
+<th><strong>CS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Definition</em></td>
+<td>A system with a single processor executing tasks sequentially.</td>
+<td>A system with multiple processors sharing workload within a single OS.</td>
+<td>A group of interconnected computers working together as a single system.</td>
+</tr>
+<tr>
+<td><em>No of Processors</em></td>
+<td>One</td>
+<td>More than one (Multiprocessing)</td>
+<td>Multiple independent computers (nodes)</td>
+</tr>
+<tr>
+<td><em>Execution Type</em></td>
+<td>Sequential execution of tasks.</td>
+<td>Parallel execution across multiple processors.</td>
+<td>Distributed execution across multiple machines.</td>
+</tr>
+<tr>
+<td><em>Performance</em></td>
+<td>Slower due to sequential execution.</td>
+<td>Faster due to shared processing.</td>
+<td>Very high performance, used for large-scale computing.</td>
+</tr>
+<tr>
+<td><em>Fault Tolerance</em></td>
+<td>Low; system fails if the processor crashes.</td>
+<td>Moderate; if one processor fails, others continue.</td>
+<td>High; if one node fails, others continue processing.</td>
+</tr>
+<tr>
+<td><em>Resource Sharing</em></td>
+<td>No sharing, all tasks handled by one CPU.</td>
+<td>Shared memory and resources among processors.</td>
+<td>Nodes communicate and share workload via a network.</td>
+</tr>
+<tr>
+<td><em>Scalability</em></td>
+<td>Limited; performance improves only by upgrading the single CPU.</td>
+<td>Scalable by adding more processors.</td>
+<td>Highly scalable by adding more nodes.</td>
+</tr>
+<tr>
+<td><em>Cost</em></td>
+<td>Low; requires only a single processor.</td>
+<td>Moderate; requires multiple processors in a single system.</td>
+<td>High; requires multiple computers and networking infrastructure.</td>
+</tr>
+<tr>
+<td><em>Examples</em></td>
+<td>Traditional personal computers.</td>
+<td>Multi-core processors, servers, supercomputers.</td>
+<td>Cloud computing, data centers, high-performance computing clusters.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="system-calls"><strong>System Calls</strong><a class="headerlink" href="#system-calls" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>A system call</strong> is a programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on</li>
+<li>A system call is a way for programs to <strong>interact with the operating system</strong>.</li>
+<li>System call <strong>provides</strong> the services of the operating system to the user programs via the Application Program Interface(API).</li>
+<li>System calls are the only entry points into the kernel system and are executed in kernel mode.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>Functions</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Process Control</strong></td>
+<td>End, abort</td>
+<td>Terminates a process</td>
+</tr>
+<tr>
+<td><em>System calls related to creating, managing, and terminating processes.</em></td>
+<td>Load, execute</td>
+<td>Loads a program into memory and runs it</td>
+</tr>
+<tr>
+<td></td>
+<td>Create process, terminate process</td>
+<td>Starts or stops a process</td>
+</tr>
+<tr>
+<td></td>
+<td>Get process attributes, set process attributes</td>
+<td>Retrieves or modifies process-related information</td>
+</tr>
+<tr>
+<td></td>
+<td>Wait for time</td>
+<td>Pauses a process for a specified duration</td>
+</tr>
+<tr>
+<td></td>
+<td>Wait event, signal event</td>
+<td>Synchronizes processes through events</td>
+</tr>
+<tr>
+<td></td>
+<td>Set and free memory</td>
+<td>Allocates or deallocates memory</td>
+</tr>
+<tr>
+<td><strong>File Management</strong></td>
+<td>Create, delete</td>
+<td>Creates or removes a file</td>
+</tr>
+<tr>
+<td><em>System calls for handling files and performing operations on them.</em></td>
+<td>Open, close</td>
+<td>Opens or closes an existing file</td>
+</tr>
+<tr>
+<td></td>
+<td>Read, write, reposition</td>
+<td>Reads from, writes to, or moves within a file</td>
+</tr>
+<tr>
+<td></td>
+<td>Get file attributes, set file attributes</td>
+<td>Retrieves or modifies file metadata</td>
+</tr>
+<tr>
+<td><strong>Device Management</strong></td>
+<td>Request device, release device</td>
+<td>Requests or releases access to a device</td>
+</tr>
+<tr>
+<td><em>System calls for interacting with hardware devices.</em></td>
+<td>Read, write, reposition</td>
+<td>Performs I/O operations on a device</td>
+</tr>
+<tr>
+<td></td>
+<td>Get device attributes, set device attributes</td>
+<td>Retrieves or modifies device settings</td>
+</tr>
+<tr>
+<td></td>
+<td>Logically attach or detach devices</td>
+<td>Connects or disconnects a device</td>
+</tr>
+<tr>
+<td><strong>Information Maintenance</strong></td>
+<td>Get time or date, set time or date</td>
+<td>Retrieves or updates the system clock</td>
+</tr>
+<tr>
+<td><em>System calls for retrieving or updating system-related information.</em></td>
+<td>Get system data, set system data</td>
+<td>Reads or modifies system-level information</td>
+</tr>
+<tr>
+<td></td>
+<td>Get process, file, or device attributes</td>
+<td>Retrieves attributes of system components</td>
+</tr>
+<tr>
+<td></td>
+<td>Set process, file, or device attributes</td>
+<td>Modifies attributes of processes, files, or devices</td>
+</tr>
+<tr>
+<td><strong>Communication</strong></td>
+<td>Create, delete communication connection</td>
+<td>Establishes or removes a communication channel</td>
+</tr>
+<tr>
+<td><em>System calls for interprocess and network communication.</em></td>
+<td>Send, receive messages</td>
+<td>Transfers data between processes or over a network</td>
+</tr>
+<tr>
+<td></td>
+<td>Transfer status signal</td>
+<td>Sends control signals between processes</td>
+</tr>
+<tr>
+<td></td>
+<td>Attach or detach remote devices</td>
+<td>Connects or disconnects remote devices</td>
+</tr>
+</tbody>
+</table>
+<h1 id="system-design-and-implementation"><strong>System Design and Implementation</strong><a class="headerlink" href="#system-design-and-implementation" title="Permanent link">&para;</a></h1>
+<h3 id="design-goals">Design Goals<a class="headerlink" href="#design-goals" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Requirements</strong> define properties which the finished system must have, and are a necessary first step in designing any large complex system.<ul>
+<li><strong>User requirements</strong> are features that users care about and understand, and are written in commonly understood vernacular. They generally do not include any implementation details, and are written similar to the product description one might find on a sales brochure or the outside of a shrink-wrapped box.</li>
+<li><strong>System requirements</strong> are written for the developers, and include more details about implementation specifics, performance requirements, compatibility constraints, standards compliance, etc. These requirements serve as a "contract" between the customer and the developers, ( and between developers and subcontractors ), and can get quite detailed.</li>
+</ul>
+</li>
+<li>Requirements for operating systems can vary greatly depending on the planned scope and usage of the system. ( Single user / multi-user, specialized system / general purpose, high/low security, performance needs, operating environment, etc. )</li>
+</ul>
+<h3 id="mechanisms-and-policies">Mechanisms and Policies<a class="headerlink" href="#mechanisms-and-policies" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Policies determine <em>what</em> is to be done. Mechanisms determine <em>how</em> it is to be implemented.</li>
+<li>If properly separated and implemented, policy changes can be easily adjusted without re-writing the code, just by adjusting parameters or possibly loading new data / configuration files. For example the relative priority of background versus foreground tasks.</li>
+</ul>
+<h3 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Traditionally OSes were written in assembly language. This provided direct control over hardware-related issues, but inextricably tied a particular OS to a particular HW platform.</li>
+<li>Recent advances in compiler efficiencies mean that most modern OSes are written in C, or more recently, C++. Critical sections of code are still written in assembly language, ( or written in C, compiled to assembly, and then fine-tuned and optimized by hand from there. )</li>
+<li>Operating systems may be developed using <strong>emulators</strong> of the target hardware, particularly if the real hardware is unavailable ( e.g. not built yet ), or not a suitable platform for development, ( e.g. smart phones, game consoles, or other similar devices. )</li>
+</ul>
 
 
 
