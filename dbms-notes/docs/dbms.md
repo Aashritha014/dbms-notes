@@ -1,7 +1,7 @@
 
 
 Welcome to  **Database Management Systems (DBMS) notes**  
-This site is organized into 5 units with detailed topics and explanations. Explore each unit below.  
+This page is organized into 5 units with detailed topics and explanations. Explore each unit below.  
 
 ---
 
