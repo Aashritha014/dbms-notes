@@ -1,7 +1,7 @@
 
 Hi, I’m *Aashritha*! 👋🏻  
 
-I’m a third-year Computer Science student at STLW, Hyderabad, India.  
+I’m a third-year Computer Science student at STLW, Hyderabad,India  
 
 I enjoy exploring machine learning, building websites just for fun, and sharing notes to make exam prep easier (and way less stressful). 🤓☝🏼  
 
