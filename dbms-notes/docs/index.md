@@ -5,7 +5,7 @@ I’m a third-year Computer Science student at STLW, Hyderabad, India.
 
 I enjoy exploring machine learning, building websites just for fun, and sharing notes to make exam prep easier (and way less stressful). 🤓☝🏼  
 
-🔗 [Blog Page](https://aashritha014.github.io/Blog-Page/)  
+🔗 [Blog Page](https://aashritha014.github.io/Portfolio/)  
 🔗 [GitHub: Aashritha014](https://github.com/Aashritha014)  
 🔗 [E-mail: s.aashritha14@gmail.com](mailto:s.aashritha14@gmail.com)  
 
