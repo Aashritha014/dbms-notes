@@ -1,12 +1,13 @@
-site_name: NOTES
+site_name: CSE NOTES
 site_url: https://Aashritha014.github.io/dbms-notes/
 use_directory_urls: true
 
 site_author: S.Aashritha 
 
 
-nav:
-  - About me: index.md
+nav: 
+  - Home: index.md
+   
  
   - DBMS:
       - Overview: dbms.md

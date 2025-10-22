@@ -24,7 +24,7 @@
     
     
       
-        <title>Unit 2 - NOTES</title>
+        <title>Unit 2 - CSE NOTES</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#process" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="NOTES" class="md-header__button md-logo" aria-label="NOTES" data-md-component="logo">
+    <a href=".." title="CSE NOTES" class="md-header__button md-logo" aria-label="CSE NOTES" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -99,7 +104,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            NOTES
+            CSE NOTES
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -215,7 +220,7 @@
   
     
   
-  About me
+  Home
 
       </a>
     </li>
@@ -306,13 +311,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="NOTES" class="md-nav__button md-logo" aria-label="NOTES" data-md-component="logo">
+    <a href=".." title="CSE NOTES" class="md-nav__button md-logo" aria-label="CSE NOTES" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    NOTES
+    CSE NOTES
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -329,7 +334,7 @@
   
   
   <span class="md-ellipsis">
-    About me
+    Home
     
   </span>
   
@@ -636,6 +641,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Unit 2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -648,6 +668,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#process-memory-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Memory Layout
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1121,6 +1169,25 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#process-memory-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Memory Layout
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1136,12 +1203,403 @@
 
 
 
-  <h1>Unit 2</h1>
+<h1 id="process">Process<a class="headerlink" href="#process" title="Permanent link">&para;</a></h1>
+<ul>
+<li>A <strong>process</strong> is a <strong>program in execution</strong>, meaning it is actively running in the system.</li>
+<li>The execution of a process follows a <strong>sequential flow</strong> of instructions.</li>
+<li>A process is the <strong>basic unit of work</strong> that the operating system manages.</li>
+<li>When a program is loaded into memory, it becomes a <strong>process</strong>.</li>
+<li>A <strong>program</strong> is a <strong>passive entity</strong> (a file containing instructions stored on a disk, such as an executable file).</li>
+<li>A <strong>process</strong> is an <strong>active entity</strong> (has a program counter tracking the next instruction to execute).</li>
+</ul>
+<h2 id="process-memory-layout">Process Memory Layout<a class="headerlink" href="#process-memory-layout" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>process in memory-SHDT</p>
+<p><img alt="image.png" src="attachment:3c2b64d0-d7f4-4c29-bc0e-71840afcf4b6:image.png" /></p>
+</li>
+<li>
+<p><strong><code>Stack</code></strong> → Stores temporary data such as function parameters, return addresses, and local variables.</p>
+</li>
+<li><strong><code>Heap</code></strong> → Holds dynamically allocated memory during runtime.</li>
+<li><strong><code>Data</code></strong> → Contains global and static variables.</li>
+<li><strong><code>Text</code></strong> → Includes the program's executable code, the current activity (Program Counter value), and processor registers.</li>
+</ul>
+<h1 id="cpu-scheduling">CPU Scheduling<a class="headerlink" href="#cpu-scheduling" title="Permanent link">&para;</a></h1>
+<ul>
+<li>CPU scheduling decisions take place under one of four conditions:<ol>
+<li>running → waiting <ol>
+<li>When a process switches from the running state to the waiting state, such as for an I/O request or invocation of the wait( ) system call.</li>
+</ol>
+</li>
+<li>running → ready <ol>
+<li>When a process switches from the running state to the ready state, for example in response to an interrupt.</li>
+</ol>
+</li>
+<li>waiting → ready<ol>
+<li>When a process switches from the waiting state to the ready state, say at completion of I/O or a return from wait( ).</li>
+</ol>
+</li>
+<li>When a process terminates.</li>
+</ol>
+</li>
+<li>For conditions 1 and 4 there is no choice - A new process must be selected.</li>
+<li>For conditions 2 and 3 there is a choice - To either continue running the current process, or select a different one.</li>
+<li>If scheduling takes place only under conditions 1 and 4, the system is said to be <strong><em>non-preemptive</em></strong>, or <strong><em>cooperative</em></strong>. Under these conditions, once a process starts running it keeps running, until it either voluntarily blocks or until it finishes. Otherwise the system is said to be <strong><em>preemptive.</em></strong></li>
+</ul>
+<h3 id="scheduling-queues">Scheduling Queues<a class="headerlink" href="#scheduling-queues" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Job queue –</strong> It contains all of the system’s processes.</li>
+<li><strong>Ready queue –</strong> This queue maintains a list of all processes in the main memory that are ready to run. This queue is always filled with new processes.</li>
+<li><strong>Device queue –</strong> This queue is made up of processes that are stalled owing to the lack of an I/O device.</li>
+</ul>
+<h1 id="thread-states">Thread States<a class="headerlink" href="#thread-states" title="Permanent link">&para;</a></h1>
+<ul>
+<li>In an operating system, a <strong>thread</strong> is a lightweight unit of execution within a process.</li>
+<li>
+<p>As an application executes, threads transition through various state managed by the OS scheduler.</p>
+<p><img alt="image.png" src="attachment:313eeb31-ea89-4005-a123-6baa3523cebe:image.png" /></p>
+</li>
+<li>
+<p><strong>Create State:</strong></p>
+<ul>
+<li>When an application initiates a task, it creates a thread.</li>
+<li>At this point, the thread is in the <strong>New</strong> state, where it is defined but not yet active. Resources (e.g., memory for the stack) are allocated during initialization.</li>
+</ul>
+</li>
+<li><strong>Ready State:</strong><ul>
+<li>After creation, the thread is assigned necessary resources (e.g., network access, memory) and enters the <strong>Ready</strong> state.</li>
+<li>It joins the scheduler’s ready queue, waiting for CPU allocation. The thread is fully prepared but not yet executing.</li>
+</ul>
+</li>
+<li><strong>Running State:</strong><ul>
+<li>When the thread scheduler assigns the CPU to the thread, it transitions from <strong>Ready</strong> to <strong>Running</strong>.</li>
+<li>In this state, the thread actively executes its instructions. This is the only state where actual processing occurs.</li>
+</ul>
+</li>
+<li><strong>Waiting State:</strong><ul>
+<li>If the thread depends on an external event beyond its control (e.g., completion of another process or a signal from another thread), it moves from <strong>Running</strong> to <strong>Waiting</strong>.</li>
+<li>The thread remains in this state until the specific event occurs, after which it returns to <strong>Ready</strong>.</li>
+<li><strong>Key Characteristic</strong>: The wait time is often tied to a specific condition or signal, not a fixed duration.</li>
+</ul>
+</li>
+<li><strong>Delayed State:</strong><ul>
+<li>When the application intentionally pauses the thread for a set period, it transitions from <strong>Running</strong> to <strong>Delayed</strong> (or <strong>Sleeping</strong>).</li>
+<li><strong>Example</strong>: In an alarm clock app, after ringing, the thread “sleeps” for a predefined interval (e.g., 5 minutes) before ringing again if not stopped.</li>
+<li>Once the delay expires, the thread returns to <strong>Ready</strong>.</li>
+<li><strong>Key Characteristic</strong>: The delay duration is explicitly specified (e.g., via a sleep() call).</li>
+</ul>
+</li>
+<li><strong>Blocked State:</strong><ul>
+<li>When the thread issues an I/O request (e.g., reading from a file or waiting for user input) and cannot proceed until it completes, it shifts from <strong>Running</strong> to <strong>Blocked</strong>.</li>
+<li>It remains blocked until the I/O operation finishes, then transitions back to <strong>Ready</strong>.</li>
+<li><strong>Key Characteristic</strong>: The wait time is indeterminate, depending on external factors like user action or hardware speed</li>
+</ul>
+</li>
+<li><strong>Finished State:</strong><ul>
+<li>Once the thread completes its task (e.g., finishes execution or is explicitly stopped), it moves from <strong>Running</strong> to <strong>Finished</strong> (or <strong>Terminated</strong>).</li>
+<li>Resources are deallocated, and the thread ceases to exist. A new thread must be created for further work</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="models-of-multithreads"><strong>Models of Multithreads</strong><a class="headerlink" href="#models-of-multithreads" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Multithreading allows the execution of multiple parts of a program at the same time.</li>
+<li>These parts are known as threads and are lightweight processes available within the process.</li>
+<li>Therefore, multithreading leads to maximum utilization of the CPU by multitasking.</li>
+<li>Multithreading models define how user threads are mapped to kernel threads</li>
+</ul>
+<h3 id="one-to-one"><strong>One to One</strong><a class="headerlink" href="#one-to-one" title="Permanent link">&para;</a></h3>
+<p><img alt="image.png" src="attachment:97bbf6ae-5992-4d41-aae9-2d6af3af1188:image.png" /></p>
+<ul>
+<li>Each user thread is mapped to a separate kernel thread.</li>
+<li>Enables <strong>true parallel execution</strong> on multiprocessor systems.</li>
+<li>When one thread makes a <strong>blocking system call</strong>, other threads can still execute.</li>
+<li>ex: Windows, Linux (Pthreads), Solaris</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Creating a user thread requires a corresponding kernel thread, which increases system overhead.</li>
+<li>A large number of kernel threads can <strong>burden the system</strong>, leading to performance limitations.</li>
+</ul>
+<h3 id="many-to-one"><strong>Many to One</strong><a class="headerlink" href="#many-to-one" title="Permanent link">&para;</a></h3>
+<p><img alt="image.png" src="attachment:44be0186-6ed8-424e-a73f-1424a739ddcf:image.png" /></p>
+<ul>
+<li>Multiple user threads are mapped to a <strong>single kernel thread</strong>.</li>
+<li>Thread management is handled in <strong>user space</strong>, making it efficient with low overhead.</li>
+<li>ex: early java green threads</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>If one thread makes a <strong>blocking system call</strong>, the entire process gets blocked.</li>
+<li><strong>No true parallel execution</strong>, as only one thread can access the kernel at a time.</li>
+</ul>
+<h3 id="many-to-many"><strong>Many to Many</strong><a class="headerlink" href="#many-to-many" title="Permanent link">&para;</a></h3>
+<p><img alt="image.png" src="attachment:2aff1c04-eebe-4395-b526-ec73e1e128cc:image.png" /></p>
+<ul>
+<li>Multiple user threads are mapped to an <strong>equal or fewer number of kernel threads</strong>.</li>
+<li>The OS dynamically schedules kernel threads, balancing concurrency and efficiency.</li>
+<li>Supports <strong>true parallel execution</strong> on multiprocessor systems.</li>
+<li>ex: Solaris, modern Linux with NPTL</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Avoids the overhead of the One-to-One model while allowing multiple user threads to execute.</li>
+<li>Overcomes the blocking issue of the Many-to-One model.</li>
+</ul>
+<h1 id="shortest-job-first">Shortest Job First<a class="headerlink" href="#shortest-job-first" title="Permanent link">&para;</a></h1>
+<p>SJF/SJN is a scheduling policy that selects the waiting process with the smallest execution time to exe next</p>
+<ul>
+<li>It can be pre-emptive(SRTF) or non-preemptive(SJF)</li>
+<li>It is a greedy algorithm</li>
+<li>All the processes according to the arrival time.</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Reduces the average waiting time.</li>
+<li>Provides optimal turnaround time.</li>
+<li>Suitable for the jobs running in batches, where run times are already known.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>May lead to starvation for longer processes</li>
+<li>Completion time must be known earlier, but sometimes it is hard to predict.</li>
+<li><strong>Non-Preemptive: SJF</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Process</strong></th>
+<th><strong>AT</strong></th>
+<th><strong>BT</strong></th>
+<th><strong>CT</strong></th>
+<th><strong>TAT</strong></th>
+<th><strong>WT</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>0</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>0</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>2</td>
+<td>4</td>
+<td>14</td>
+<td>12</td>
+<td>8</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>4</td>
+<td>1</td>
+<td>8</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>P4</td>
+<td>5</td>
+<td>2</td>
+<td>10</td>
+<td>5</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Preemptive: SRTF</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>Process</strong></th>
+<th><strong>AT</strong></th>
+<th><strong>BT</strong></th>
+<th><strong>CT</strong></th>
+<th><strong>TAT</strong></th>
+<th><strong>WT</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>0</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>0</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>2</td>
+<td>4</td>
+<td>14</td>
+<td>12</td>
+<td>8</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>4</td>
+<td>1</td>
+<td>8</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>P4</td>
+<td>5</td>
+<td>2</td>
+<td>10</td>
+<td>5</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 
-<div class="admonition announcement">
-<p class="admonition-title">Announcement</p>
-<p>Contribute at <a href="https://github.com/Aashritha014/dbms-notes">GitHub</a></p>
-</div>
+<span class="k">struct</span><span class="w"> </span><span class="nc">Process</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">bt</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">w</span><span class="p">[</span><span class="mi">100</span><span class="p">],</span><span class="w"> </span><span class="n">tot</span><span class="p">[</span><span class="mi">100</span><span class="p">],</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"> </span><span class="n">awt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">atot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">avwt</span><span class="p">,</span><span class="w"> </span><span class="n">avtot</span><span class="p">;</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">Process</span><span class="w"> </span><span class="n">sjf</span><span class="p">[</span><span class="mi">100</span><span class="p">],</span><span class="w"> </span><span class="n">temp</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Taking the number of processes as input</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter the number of Processes: &quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Taking burst time input</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter the Burst time for Process %d: &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">sjf</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">bt</span><span class="p">);</span>
+<span class="w">        </span><span class="n">sjf</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// Assigning process ID</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Sorting processes based on burst time (SJF Logic)</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sjf</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">bt</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">sjf</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">bt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sjf</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">                </span><span class="n">sjf</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sjf</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+<span class="w">                </span><span class="n">sjf</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">temp</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Initial waiting time and turnaround time calculation</span>
+<span class="w">    </span><span class="n">w</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">                  </span><span class="c1">// First process has 0 waiting time</span>
+<span class="w">    </span><span class="n">tot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sjf</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">bt</span><span class="p">;</span><span class="w">        </span><span class="c1">// First turnaround time = burst time</span>
+
+<span class="w">    </span><span class="c1">// Computing turnaround time for other processes</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tot</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">];</span><span class="w">     </span>
+<span class="w">                </span><span class="c1">// Waiting time = previous turnaround time</span>
+<span class="w">        </span><span class="n">tot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">sjf</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">bt</span><span class="p">;</span><span class="w"> </span>
+<span class="w">                </span><span class="c1">// Turnaround time = waiting time + burst time</span>
+
+<span class="w">        </span><span class="n">awt</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w">  </span><span class="c1">// Accumulate total waiting time</span>
+<span class="w">        </span><span class="n">atot</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">tot</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"> </span><span class="c1">// Accumulate total turnaround time</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Calculating averages</span>
+<span class="w">    </span><span class="n">avwt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">awt</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">    </span><span class="n">avtot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">atot</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Printing results</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n\n</span><span class="s">ProcessId</span><span class="se">\t</span><span class="s">Waiting Time</span><span class="se">\t</span><span class="s">Turnaround Time&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n\t</span><span class="s">%d</span><span class="se">\t\t</span><span class="s">%d</span><span class="se">\t\t</span><span class="s">%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">sjf</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">tot</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n\n</span><span class="s">Total Waiting Time: %d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">awt</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Total Turnaround Time: %d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">atot</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Average Waiting Time: %.2f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">avwt</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Average Turnaround Time: %.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">avtot</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Enter the number of Processes: 4
+Enter the Burst time for Process 1: 6
+Enter the Burst time for Process 2: 8
+Enter the Burst time for Process 3: 7
+Enter the Burst time for Process 4: 3</p>
+<table>
+<thead>
+<tr>
+<th>ProcessID</th>
+<th>Waiting Time</th>
+<th>Turnaround Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>3</td>
+<td>9</td>
+<td>16</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16</td>
+<td>24</td>
+</tr>
+</tbody>
+</table>
+<p>Total Waiting Time: 28
+Total Turnaround Time: 52
+Average Waiting Time: 7.00
+Average Turnaround Time: 13.00</p>
+<h1 id="process-control-block">Process Control Block<a class="headerlink" href="#process-control-block" title="Permanent link">&para;</a></h1>
+<ul>
+<li>A <strong>Process Control Block (PCB)</strong> is a data structure maintained by the Operating System for every process.</li>
+<li>It is also known as a <strong>Task Control Block</strong> and is identified by a unique <strong>Process ID (PID)</strong>.</li>
+<li>The PCB stores all essential information required to manage and track a process, such as its current state, CPU registers, scheduling details, and memory management information.</li>
+<li>Whenever a process transitions between states (<strong>New, Ready, Running, Blocked, or Terminated</strong>), the OS updates the PCB to reflect the process's current status.</li>
+<li>The PCB ensures efficient process scheduling, resource allocation, and execution management.</li>
+</ul>
+<h2 id="components-of-pcb"><strong>Components of PCB</strong><a class="headerlink" href="#components-of-pcb" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>pcb</p>
+<p><img alt="Screenshot 2025-03-03 at 7.14.14 PM.png" src="attachment:8349b7f0-6ccd-4acd-a721-0744bed0c8ff:Screenshot_2025-03-03_at_7.14.14_PM.png" /></p>
+</li>
+<li>
+<p><strong><code>Process State</code></strong> – Indicates the current state of the process (New, Ready, Running, Waiting, or Terminated).</p>
+</li>
+<li><strong><code>Process ID (PID)</code></strong> – A unique number assigned to identify the process.</li>
+<li><strong><code>Program Counter</code></strong> – Holds the memory address of the next instruction to be executed.</li>
+</ul>
+<p>4.<strong><code>CPU Registers</code></strong> – Stores processor registers used by the process, including accumulators, index registers, stack pointers, and general-purpose registers.</p>
+<p>5.<strong><code>CPU Scheduling Information</code></strong> – Contains scheduling details like process priority, pointers to scheduling queues, and other scheduling parameters.</p>
+<p>6.<strong><code>Memory Management Information</code></strong>– Stores memory-related details such as page tables, segment tables, base and limit registers, depending on the memory management system in use.</p>
+<p>7.<strong><code>Accounting Information</code></strong> – Tracks resource usage, including CPU time, process execution limits, and account details.</p>
+<p>8.**<code>List of Open Files**</code> – Maintains a record of all files currently associated with the process.</p>
+<p>9.<strong><code>I/O Status Information</code></strong> – Lists the I/O devices and files used by the process.</p>
+<h3 id="location-of-pcb-in-memory"><strong>Location of PCB in Memory</strong><a class="headerlink" href="#location-of-pcb-in-memory" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The <strong>Process Control Block</strong> is stored in a protected memory area to prevent unauthorized access.</li>
+<li>Some operating systems place the PCB at the <strong>beginning of the kernel stack</strong> for the process, ensuring security and efficient access by the OS</li>
+</ul>
+<hr />
 
 
 
