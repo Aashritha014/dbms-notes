@@ -7,7 +7,7 @@ I enjoy exploring machine learning, building websites just for fun, and sharing 
 
 These notes are crafted to make your **college exam prep** easier, smarter, and maybe even a *little fun* ✨
 
-[Website link to DBMS Notes](https://aashritha014.github.io/Portfolio/)
+[Website link to DBMS Notes](https://aashritha.netlify.app)
 
 ---
 
